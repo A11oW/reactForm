@@ -6,6 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^6.0.3",
+    "babel-loader": "^5.3.2",
     "jsx-loader": "^0.13.2",
     "postcss-loader": "^0.6.0",
     "webpack": "^1.12.2",

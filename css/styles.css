@@ -23,21 +23,19 @@ body {
     font-size: 34px;
 }
 .b-calc__success__curency {
-    font-family: 28px;
+    font-size: 28px;
 }
-.b-calc .b-form-group {
-}
-.b-calc .b-form-group label[for="type"] { }
-#b-calc-type { }
-.b-calc .b-form-group label[for="cost"] { }
-.b-calc .b-form-group input[type="text"] { }
 
-label {
+.b-form-group {
+}
+.b-form-group label[for="type"] { }
+.b-form-group label[for="cost"] { }
+.b-form-group input[type="text"] { }
+.b-form-group label {
     display: inline-block;
     margin-bottom: 15px;
 }
-
-input, select {
+.b-form-group input, .b-form-group select {
     display: block;
     margin: 0 0 20px;
     padding: 11px 15px;
@@ -56,12 +54,11 @@ input, select {
     text-indent: 0.01px;
     text-overflow: '';
 }
-
-.customSelect {
+.b-form-group .customSelect {
     position: relative;
 
 }
-.customSelect:before {
+.b-form-group .customSelect:before {
     content: " ";
     position: absolute;
     top: 50%;
@@ -74,8 +71,9 @@ input, select {
     border-color: #dbdbdb transparent transparent transparent;
     z-index: 1;
     pointer-events: none;
+    box-sizing: border-box;
 }
-.customSelect:after {
+.b-form-group .customSelect:after {
     content: " ";
     position: absolute;
     top: 0;
@@ -88,21 +86,21 @@ input, select {
     border-radius: 0 4px 4px 0;
     pointer-events: none;
 }
-
-.customSelect select {
+.b-form-group .customSelect select {
     padding-right: 65px;
 }
-
-select[disabled] {
+.b-form-group select[disabled] {
     cursor: not-allowed;
     background-color: #eee;
 }
 
 .b-calc__hr {
+    display: block;
     margin: -12px -18px 15px;
-    border-color: #f6f6f6;
-    border-width: 2px;
-    border-top: 0px;
+    padding: 0;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #f6f6f6;
 }
 
 .b-form-group__cnt {
@@ -110,9 +108,11 @@ select[disabled] {
 }
 .b-form-group__left {
     float: left;
+    max-width: 50%;
 }
 .b-form-group__right {
     float: right;
+    max-width: 50%;
 }
 
 .b-calc__btn-submit {

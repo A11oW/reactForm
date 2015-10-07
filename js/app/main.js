@@ -78,7 +78,7 @@ var Calc = React.createClass({
                 </div>
                 <div className="b-form-group">
                     <label htmlFor="b-calc-type-building">Что хотите приобрести</label>
-                    <div className="customSelect">
+                    <div className="customSelect" htmlFor="b-calc-type-building">
                         <select
                             ref = "typeBuilding"
                             name = "type-building"
@@ -105,7 +105,7 @@ var Calc = React.createClass({
                 <div className="b-form-group">
                     <label htmlFor="b-calc-time">Срок кредитования</label>
                     <div className="b-form-group__cnt">
-                        <div className="b-form-group__left">
+                        <div className="b-form-group__left" htmlFor="b-calc-time">
                             <div className="customSelect">
                                 <select
                                     ref = "time"

@@ -8930,7 +8930,7 @@
 	    handleChangeCost: function () {
 	        var value = Math.ceil(React.findDOMNode(this.refs.cost).value.replace(/\D+/g,""));
 	        React.findDOMNode(this.refs.cost).value = this.getCostString(value);
-	            this.setState({cost: value});
+	        this.setState({cost: value});
 	    },
 	    /**
 	     * Приводим стоимость объекта к "правильному" виду
@@ -8983,15 +8983,17 @@
 	                ), 
 	                React.createElement("div", {className: "b-form-group"}, 
 	                    React.createElement("label", {htmlFor: "b-calc-type-building"}, "Что хотите приобрести"), 
-	                    React.createElement("select", {
-	                        ref: "typeBuilding", 
-	                        name: "type-building", 
-	                        id: "b-calc-type-building", 
-	                        onChange: this.handleChangeTypeBuilding
-	                    }, 
-	                        React.createElement("option", {value: "0.3"}, "Квартиру в новостройке"), 
-	                        React.createElement("option", {value: "0.5"}, "Коттедж"), 
-	                        React.createElement("option", {value: "0.7"}, "Дом")
+	                    React.createElement("div", {className: "customSelect", htmlFor: "b-calc-type-building"}, 
+	                        React.createElement("select", {
+	                            ref: "typeBuilding", 
+	                            name: "type-building", 
+	                            id: "b-calc-type-building", 
+	                            onChange: this.handleChangeTypeBuilding
+	                        }, 
+	                            React.createElement("option", {value: "0.3"}, "Квартиру в новостройке"), 
+	                            React.createElement("option", {value: "0.5"}, "Коттедж"), 
+	                            React.createElement("option", {value: "0.7"}, "Дом")
+	                        )
 	                    )
 	                ), 
 	                React.createElement("div", {className: "b-form-group"}, 
@@ -9008,24 +9010,28 @@
 	                React.createElement("div", {className: "b-form-group"}, 
 	                    React.createElement("label", {htmlFor: "b-calc-time"}, "Срок кредитования"), 
 	                    React.createElement("div", {className: "b-form-group__cnt"}, 
-	                        React.createElement("div", {className: "b-form-group__left"}, 
-	                            React.createElement("select", {
-	                                ref: "time", 
-	                                id: "b-calc-time", 
-	                                name: "timeYear", 
-	                                onChange: this.handleChangeTime
-	                            }, 
-	                                React.createElement("option", {value: "10"}, "10 лет"), 
-	                                React.createElement("option", {value: "20"}, "20 лет"), 
-	                                React.createElement("option", {value: "30"}, "30 лет")
+	                        React.createElement("div", {className: "b-form-group__left", htmlFor: "b-calc-time"}, 
+	                            React.createElement("div", {className: "customSelect"}, 
+	                                React.createElement("select", {
+	                                    ref: "time", 
+	                                    id: "b-calc-time", 
+	                                    name: "timeYear", 
+	                                    onChange: this.handleChangeTime
+	                                }, 
+	                                    React.createElement("option", {value: "10"}, "10 лет"), 
+	                                    React.createElement("option", {value: "20"}, "20 лет"), 
+	                                    React.createElement("option", {value: "30"}, "30 лет")
+	                                )
 	                            )
 	                        ), 
 	                        React.createElement("div", {className: "b-form-group__right"}, 
-	                            React.createElement("select", {name: "timeYear", id: "b-calc-time", disabled: true}, 
-	                                React.createElement("option", {value: "0"}, "0 мес."), 
-	                                React.createElement("option", {value: "1"}, "1 мес."), 
-	                                React.createElement("option", {value: "2"}, "2 мес."), 
-	                                React.createElement("option", {value: "3"}, "3 мес.")
+	                            React.createElement("div", {className: "customSelect"}, 
+	                                React.createElement("select", {name: "timeYear", id: "b-calc-time", disabled: true}, 
+	                                    React.createElement("option", {value: "0"}, "0 мес."), 
+	                                    React.createElement("option", {value: "1"}, "1 мес."), 
+	                                    React.createElement("option", {value: "2"}, "2 мес."), 
+	                                    React.createElement("option", {value: "3"}, "3 мес.")
+	                                )
 	                            )
 	                        )
 	                    )

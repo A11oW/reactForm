@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, Sans Serif;
+    color: #666666;
+}
+.b-calc {
+    padding: 25px 18px 10px;
+    width: 355px;
+    border-radius: 4px;
+    box-shadow: 0 0 3px rgba(0,0,0,.2);
+    color: #5e5955;
+}
+
+.b-calc__success {
+    margin-bottom: 25px;
+}
+.b-calc__success_title {
+    margin-bottom: 10px;
+}
+.b-calc__success_sum {
+    font-size: 34px;
+}
+.b-calc__success__curency {
+    font-family: 28px;
+}
+.b-calc .b-form-group {
+}
+.b-calc .b-form-group label[for="type"] { }
+#b-calc-type { }
+.b-calc .b-form-group label[for="cost"] { }
+.b-calc .b-form-group input[type="text"] { }
+
+label {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+input, select {
+    display: block;
+    margin: 0 0 20px;
+    padding: 11px 15px;
+    width: 100%;
+    border: 1px solid #dbdbdb;
+    box-shadow: 0 0 1px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    background: transparent;
+    font-size: 18px;
+    color: #666;
+    height: 45px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.customSelect {
+    position: relative;
+
+}
+.customSelect:before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin-top: -2.5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #dbdbdb transparent transparent transparent;
+}
+.customSelect:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 50px;
+    height: 100%;
+    border-left: 1px solid #dbdbdb;
+}
+
+.customSelect select {
+    padding-right: 65px;
+}
+
+.b-calc__hr {
+    margin: -12px -18px 15px;
+    border-color: #f6f6f6;
+    border-width: 2px;
+    border-top: 0px;
+}
+
+.b-form-group__cnt {
+    overflow: hidden;
+}
+.b-form-group__left {
+    float: left;
+}
+.b-form-group__right {
+    float: right;
+}
+
+.b-calc__btn-submit {
+    padding: 11px 15px;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 4px;
+    background-color: #f2a501;
+    border: none;
+}

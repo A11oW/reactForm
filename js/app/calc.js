@@ -79,7 +79,7 @@ class Calc extends React.Component{
                             ref = "typeBuilding"
                             name = "type-building"
                             id = "b-calc-type-building"
-                            onChange = {this.handleChangeTypeBuilding}
+                            onChange = {this.handleChangeTypeBuilding.bind(this)}
                         >
                             <option value="0.3">Квартиру в новостройке</option>
                             <option value="0.5">Коттедж</option>
@@ -95,7 +95,7 @@ class Calc extends React.Component{
                         type = "text"
                         id = "b-calc-cost"
                         defaultValue = {this.getCostString(this.state.cost)}
-                        onBlur = {this.handleChangeCost}
+                        onBlur = {this.handleChangeCost.bind(this)}
                     />
                 </div>
                 <div className="b-form-group">
@@ -107,7 +107,7 @@ class Calc extends React.Component{
                                     ref = "time"
                                     id = "b-calc-time"
                                     name = "timeYear"
-                                    onChange={this.handleChangeTime}
+                                    onChange={this.handleChangeTime.bind(this)}
                                 >
                                     <option value="10">10 лет</option>
                                     <option value="20">20 лет</option>
@@ -131,7 +131,7 @@ class Calc extends React.Component{
                 <input
                     className="b-calc__btn-submit"
                     type="submit"
-                    onClick={this.handlerClickSubmit}
+                    onClick={this.handlerClickSubmit.bind(this)}
                     value="Рассчитать"/>
             </form>
         );

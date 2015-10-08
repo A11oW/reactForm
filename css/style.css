@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, Sans Serif;
+  color: #666666;
+}
+.calc__calc___2n0qR {
+  padding: 25px 18px 10px;
+  width: 355px;
+  border-radius: 4px;
+  box-shadow: 0 0 3px rgba(0,0,0,.2);
+  color: #5e5955;
+}
+
+.calc__success___1yes1 {
+  margin-bottom: 25px;
+}
+.calc__success_title___VNZGS {
+  margin-bottom: 10px;
+}
+.calc__success_sum___n5sUN {
+  font-size: 34px;
+}
+.calc__success__curency___13ME5 {
+  font-size: 28px;
+}
+.calc__form___1xrzH { }
+
+.calc__b-form-group___1Cbje {
+}
+.calc__b-form-group___1Cbje label[for="type"] { }
+.calc__b-form-group___1Cbje label[for="cost"] { }
+.calc__b-form-group___1Cbje input[type="text"] { }
+.calc__b-form-group___1Cbje label {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.calc__b-form-group___1Cbje input, .calc__b-form-group___1Cbje select {
+  display: block;
+  margin: 0 0 20px;
+  padding: 11px 15px;
+  width: 100%;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0 0 1px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  background: transparent;
+  font-size: 18px;
+  color: #666;
+  height: 45px;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+}
+.calc__b-form-group___1Cbje .calc__customSelect___17yB4 {
+  position: relative;
+
+}
+.calc__b-form-group___1Cbje .calc__customSelect___17yB4:before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  margin-top: -2.5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: #dbdbdb transparent transparent transparent;
+  z-index: 1;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+.calc__b-form-group___1Cbje .calc__customSelect___17yB4:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  border-radius: 0 4px 4px 0;
+  pointer-events: none;
+}
+.calc__b-form-group___1Cbje .calc__customSelect___17yB4 select {
+  padding-right: 65px;
+}
+.calc__b-form-group___1Cbje select[disabled] {
+  cursor: not-allowed;
+  background-color: #eee;
+}
+
+.calc__hr___ygei0 {
+  display: block;
+  margin: -12px -18px 15px;
+  padding: 0;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #f6f6f6;
+}
+
+.calc__b-form-group__cnt___uR3Ki {
+  overflow: hidden;
+}
+.calc__b-form-group__left___O-F79 {
+  float: left;
+  max-width: 50%;
+}
+.calc__b-form-group__right___3eUM2 {
+  float: right;
+  max-width: 50%;
+}
+
+.calc__btn-submit___34za9 {
+  padding: 11px 15px;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 4px;
+  background-color: #f2a501;
+  border: none;
+}

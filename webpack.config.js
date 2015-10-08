@@ -1,10 +1,10 @@
-var autoprefixer = require('autoprefixer');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     entry: {
         main: [
             'webpack-dev-server/client?http://localhost:8080',
-            './js/app/main.js'
+            './js/components/main.js'
         ]
     },
     output: {
@@ -18,18 +18,20 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
-                test:   /\.css$/,
-                loader: "style-loader!css-loader!postcss-loader"
-            },
-            {
                 test: /\.js$/,
                 loader: "babel-loader",
                 exclude: /node_modules/
-            }
-
+            },
+            {
+                test: /\.css$/,
+                loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader')
+            },
         ]
     },
-    postcss: function () {
-        return [autoprefixer];
-    }
+    postcss: [
+        require('autoprefixer-core'),
+    ],
+    plugins: [
+        new ExtractTextPlugin('css/style.css', { allChunks: true }),
+    ]
 };
